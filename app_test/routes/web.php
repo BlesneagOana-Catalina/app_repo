@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','GuestController@getFields');
+Route::post('add_guest', 'GuestController@postFields');
